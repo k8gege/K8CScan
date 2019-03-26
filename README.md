@@ -1,11 +1,11 @@
 <p><span style="font-size: 16px;">[原创]K8 Cscan 3.0 高效内网渗透自定义扫描器（附C#/VC/Delphi/Python模块源码) </span><br /><span style="font-size: 16px;">链接:&nbsp;&nbsp; <a href="https://www.cnblogs.com/k8gege/p/10519321.html" target="_blank">https://www.cnblogs.com/k8gege/p/10519321.html</a></span></p>
 <p><br /><strong><span style="font-size: 16px;">功能：</span></strong></p>
-<p>1.支持批量C段扫描(只要ip.txt填写多个IP段即可)</p>
-<p>2.支持指定范围C段扫描（如192.168.1.0-192.180.2.0）</p>
+<p>1.支持批量C段扫描(ip.txt填多个IP段即可)</p>
+<p>2.支持指定范围C段扫描</p>
 <p>3.自带模块1(获取内网存活机器IP、主机名、MAC)</p>
 <p>4.自带模块2(获取内网Web机器IP、主机名、Banner、网页标题)</p>
-<p>5.支持执行自定义程序(系统自带命令等等)</p>
-<p>6.支持自定义模块功能(功能直接基于源码修改即可)</p>
+<p>5.支持调用自定义程序(当然系统自带命令也可以)</p>
+<p>6.支持自定义模块(功能基于模块源码修改即可)</p>
 <p>7.主程序分为检测存活主机、非检测存活主机版本</p>
 <p>&nbsp;</p>
 <p><span style="font-size: 16px;"><strong>原理：</strong></span><br />采用Cping原理多线程批量执行外部exe或DLL，适用于大型内网，扫描速度和被调用工具或模块有关<br />为了提高效率Cscan自动探测存活主机，只有主机在线时才会执行DLL或EXE。</p>
@@ -19,7 +19,7 @@
 <p><span style="font-size: 16px;"><strong>例子1: 配置Cscan.ini 调用S扫描器扫描C段主机开放端口</strong></span></p>
 <p><img src="https://img2018.cnblogs.com/blog/1463611/201903/1463611-20190312200210710-22698312.png" alt="" /></p>
 <p><strong><span style="font-size: 16px;">例子2: 调用c#编写的DLL扫描内网WEB主机Banner以及标题</span></strong></p>
-<p>DLL源码 https://www.cnblogs.com/k8gege/p/10519512.html</p>
+<p>DLL源码 <a href="https://www.cnblogs.com/k8gege/p/10519512.html" target="_blank">https://www.cnblogs.com/k8gege/p/10519512.html</a></p>
 <p><img src="https://img2018.cnblogs.com/blog/1463611/201903/1463611-20190312200408983-358773201.jpg" alt="" /></p>
 <p><br /><span style="font-size: 16px;"><strong>3.0 DLL调用（支持C# DLL \ VC DLL \Delphi DLL）</strong></span><br /><br />Demo<br />C# DLL 名称必须为netscan.dll &nbsp;&nbsp; &nbsp; （源码例子为获取IP对应机器名，其它功能自己写）<br />VC DLL 名称必须为vcscan.dll &nbsp;&nbsp;&nbsp; &nbsp; （源码例子为打印在线主机IP，其它功能自己写）<br />Delphi DLL 名称必须为descan.dll&nbsp; （源码例子为打印在线主机IP，其它功能自己写）<br /><br />EXE (非scan.exe或多参数需配置cscan.ini)<br />scan.py&nbsp;&nbsp; 使用pyinstaller打包成exe（源码例子为打印在线主机IP，其它功能自己写）<br />scan.cs&nbsp; （源码例子为打印在线主机IP，其它功能自己写）<br />scan.cpp （源码例子为打印在线主机IP，其它功能自己写）<br /><br /><span style="font-size: 16px;">调用优先级</span><br /><span style="font-size: 16px;">为 netscan.dll &gt;&gt; vcscan.dll &gt;&gt; descan.dll &gt;&gt; Cscan.ini &gt;&gt; scan.exe 同目录下同时含以下多个文件时，仅会调用一个。</span><br /><span style="font-size: 16px;">Cscan.ini 支持exe自定义参数，其它均只支持IP。</span><br /><br /><span style="font-size: 16px;"><strong>注意：</strong></span></p>
 <p><span style="font-size: 16px;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>调用EXE可能会在运行机器上产生30个exe进程,所以建议将功能写成DLL比较好。</span><br /><span style="font-size: 16px;">&nbsp;&nbsp; &nbsp;&nbsp; 不懂代码的或实在无法实现功能的可使用exe或配置cscan.ini文件（如批量ping，WMI批量种马等）</span><br /><br />&nbsp;&nbsp; &nbsp; &nbsp;<br /><span style="font-size: 16px;"><strong>其它：</strong></span></p>
