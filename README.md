@@ -1,8 +1,6 @@
 # K8CScan 20190326
-
-<p>[原创]K8 Cscan 3.0 高效内网渗透扫描工具（附C#/VC/Delphi/Python模块源码) <br />
- https://www.cnblogs.com/k8gege/p/10519321.html  <br /> <br />
-<p><span style="font-size: 16px;">[原创]K8 Cscan 3.0 高效内网渗透扫描工具（附C#/VC/Delphi/Python模块源码) </span><br /><br /><strong><span style="font-size: 16px;">功能：</span></strong></p>
+<p><span style="font-size: 16px;">[原创]K8 Cscan 3.0 高效内网渗透自定义扫描器（附C#/VC/Delphi/Python模块源码) </span><br /><span style="font-size: 16px;">链接:&nbsp;&nbsp; <a href="https://www.cnblogs.com/k8gege/p/10519321.html" target="_blank">https://www.cnblogs.com/k8gege/p/10519321.html</a></span></p>
+<p><br /><strong><span style="font-size: 16px;">功能：</span></strong></p>
 <p>1.支持批量C段扫描(只要ip.txt填写多个IP段即可)</p>
 <p>2.支持指定范围C段扫描（如192.168.1.0-192.180.2.0）</p>
 <p>3.自带模块1(获取内网存活机器IP、主机名、MAC)</p>
