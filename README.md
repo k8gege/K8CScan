@@ -1,9 +1,8 @@
 # K8CScan 20190326
-Cscan 3.0 高效批量扫描工具(模块、源码)<br>
-Example Delphi\VC\C#\PYTHON等代码<br>
-c# netscan 获取内网主机IP/机器名/Banner/网页标题,https://www.cnblogs.com/k8gege/p/10519512.html<br>
 
-<p>[原创]K8 Cscan 3.0 高效内网渗透扫描工具（附C#/VC/Delphi/Python模块源码) <br /><br />功能：</p>
+<p>[原创]K8 Cscan 3.0 高效内网渗透扫描工具（附C#/VC/Delphi/Python模块源码) <br />
+ https://www.cnblogs.com/k8gege/p/10519321.html 
+ <br />功能：</p>
 <p>1.支持批量C段扫描(只要ip.txt填写多个IP段即可)</p>
 <p>2.支持指定范围C段扫描（如192.168.1.0-192.180.2.0）</p>
 <p>3.自带模块1(获取内网存活机器IP、主机名、MAC)</p>
