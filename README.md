@@ -1,4 +1,4 @@
-#K8CScan 3.1 20190403
+# K8CScan 3.1 20190403
 [+] 扫描插件 K8Cscan Moudle FtpScan.rar Ftp密码扫描插件<br>
 [+] 扫描插件 K8Cscan Moudle MysqlScan.rar Mysql密码扫描插件<br>
 [+] 扫描插件 K8Cscan Moudle OnlinePC.rar 存活主机扫描插件<br>
