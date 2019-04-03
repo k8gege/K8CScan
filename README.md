@@ -1,3 +1,13 @@
+#K8CScan 3.1 20190403
+[+] 扫描插件 K8Cscan Moudle FtpScan.rar Ftp密码扫描插件<br>
+[+] 扫描插件 K8Cscan Moudle MysqlScan.rar Mysql密码扫描插件<br>
+[+] 扫描插件 K8Cscan Moudle OnlinePC.rar 存活主机扫描插件<br>
+[+] 扫描插件 K8Cscan Moudle WebBanner.rar WebBanner标题扫描插件<br>
+[+] 扫描插件 K8Cscan Moudle WmiScan.rar Wmi扫描Win系统密码插件<br>
+[+] 扫描工具 K8Cscan for SameWeb.rar C段旁站扫描工具<br>
+[+] 扫描工具 K8Cscan for SubDomain.rar 子域名扫描工具<br>
+[+] 扫描工具 K8Cscan 3.1.rar 高效内网渗透扫描工具<br>
+
 <p><span style="font-size: 16px;">[原创]K8 Cscan 3.0 高效内网渗透自定义扫描器（附C#/VC/Delphi/Python源码) </span><br /><span style="font-size: 16px;">链接:&nbsp;&nbsp; <a href="https://www.cnblogs.com/k8gege/p/10519321.html" target="_blank">https://www.cnblogs.com/k8gege/p/10519321.html</a></span></p>
 <p><br /><strong><span style="font-size: 16px;">功能：</span></strong></p>
 <p>1.支持批量C段扫描(几千几万IP段都可以)</p>
