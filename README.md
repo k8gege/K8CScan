@@ -141,8 +141,7 @@ ip.txt填上需要扫描的IP或IP段，程序自动转换为IP段。
 配置Cscan.ini
 [Cscan]
 exe=LanWebScan.exe
-arg=gettitle ip
-
+arg=gettitle $ip$
 
 命令行下执行cscan
 
@@ -153,9 +152,7 @@ arg=gettitle ip
 配置Cscan.ini
 [Cscan]
 exe=s.exe
-arg=TCP ip
-
-21,80,3306,3389,1521
+arg=TCP $ip$ 21,80,3306,3389,1521
 
 命令行下执行cscan
 
