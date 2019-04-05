@@ -15,13 +15,13 @@ namespace CscanDLL
             else
             {
                 string hostName = "";
-                //return ip;
-                //return System.Net.Dns.GetHostByAddress(ip).HostName;
+                //return ip+"\r\n";
+                //return System.Net.Dns.GetHostByAddress(ip).HostName+"\r\n";
                 //192.11.22.10    Microsoft-IIS/10.0      IIS Windows
                 //192.11.22.1     H3C-Miniware-Webs       ER3200G2
-                //return ip + "\t" + getURLbanner(ip) + "\t" + GetTitle(getHtml("http://" + ip,2));
-                return ip + "\t" + hostName + "\t[" + getURLbanner(ip) + "]\t[" + GetTitle(getHtml("http://" + ip)) + "]";
-                //return ip + "\t" + System.Net.Dns.GetHostByAddress(ip).HostName;
+                //return ip + "\t" + getURLbanner(ip) + "\t" + GetTitle(getHtml("http://" + ip,2))+"\r\n";
+                return ip + "\t" + hostName + "\t[" + getURLbanner(ip) + "]\t[" + GetTitle(getHtml("http://" + ip)) + "]"+"\r\n";
+                //return ip + "\t" + System.Net.Dns.GetHostByAddress(ip).HostName+"\r\n";
 
 
             }
