@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Net;
 using System.Text.RegularExpressions;
-
+//K8 Cscan 3.1 WebBanner moudle
 namespace CscanDLL
 {
     public class scan
