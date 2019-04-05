@@ -28,15 +28,15 @@ Cscan 主程序分为检测存活主机、非检测存活主机版本  程序采
 
 程序模块
 
-[+] 主程序 K8Cscan 3.1.rar 大型内网渗透扫描器
-[+] 扫描插件 K8Cscan Moudle FtpScan.rar Ftp密码扫描插件
-[+] 扫描插件 K8Cscan Moudle MysqlScan.rar Mysql密码扫描插件
-[+] 扫描插件 K8Cscan Moudle OnlinePC.rar 存活主机扫描插件
-[+] 扫描插件 K8Cscan Moudle WebBanner.rar WebBanner标题扫描插件
-[+] 扫描插件 K8Cscan Moudle WmiScan.rar Wmi扫描Win系统密码插件
-[+] 扫描工具 K8Cscan for SameWeb.rar C段旁站扫描工具
-[+] 扫描工具 K8Cscan for SubDomain.rar 子域名扫描工具
-[+] 扫描插件 支持自定义插件、EXE、脚本等（附C#/VC/Delphi/Python源码)
+[+] 主程序 K8Cscan 3.1.rar 大型内网渗透扫描器<br>
+[+] 扫描插件 K8Cscan Moudle FtpScan.rar Ftp密码扫描插件<br>
+[+] 扫描插件 K8Cscan Moudle MysqlScan.rar Mysql密码扫描插件<br>
+[+] 扫描插件 K8Cscan Moudle OnlinePC.rar 存活主机扫描插件<br>
+[+] 扫描插件 K8Cscan Moudle WebBanner.rar WebBanner标题扫描插件<br>
+[+] 扫描插件 K8Cscan Moudle WmiScan.rar Wmi扫描Win系统密码插件<br>
+[+] 扫描工具 K8Cscan for SameWeb.rar C段旁站扫描工具<br>
+[+] 扫描工具 K8Cscan for SubDomain.rar 子域名扫描工具<br>
+[+] 扫描插件 支持自定义插件、EXE、脚本等（附C#/VC/Delphi/Python源码)<br>
 
 原理：
 采用Cping原理多线程批量执行外部exe或DLL，适用于大型内网，扫描速度和被调用工具或模块有关
