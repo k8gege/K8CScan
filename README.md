@@ -4,7 +4,11 @@
 <p><span style="font-size: 18px;"><strong>主程序功能：</strong><br /><span style="font-size: 15px;"><span style="font-size: 15px;"><span style="font-size: 15px;"><span style="font-size: 15px;">1.支持指定IP扫描<br />2.支持指定C段扫描(ip/24)<br />3.支持指定B段扫描(ip/16)<br />4.支持指定A段扫描(ip/8)<br />5.支持指定URL扫描<br />6.支持批量IP扫描(ip.txt)<br />7.支持批量C段扫描(ip24.txt)<br />8.支持批量B段扫描(ip16.txt)<br />9.支持批量URL扫描(url.txt)<br />10.支持指定范围C段扫描<br />11.支持调用自定义程序(系统命令或第三方程序)<br />12.支持自定义模块(功能基于模块源码修改即可)</span></span></span></span></span></p>
 <p><span style="font-size: 18px;"><strong>程序&amp;插件:</strong></span><br /><span style="font-size: 15px;">[+] 主程序&nbsp;&nbsp; K8Cscan 3.8.rar 大型内网渗透扫描器<br />[+] 模块插件 K8Cscan Moudle WeblogicScan &amp; Exploit.rar Weblogic漏洞扫描&amp;GetShell插件<br />[+] 模块插件 K8Cscan Moudle OSScan.rar 系统版本探测插件<br />[+] 模块插件 K8Cscan Moudle FtpScan.rar Ftp密码扫描插件<br />[+] 模块插件 K8Cscan Moudle MysqlScan.rar Mysql密码扫描插件<br />[+] 模块插件 K8Cscan Moudle OnlinePC.rar 存活主机扫描插件<br />[+] 模块插件 K8Cscan Moudle WebBanner.rar WebBanner标题扫描插件<br />[+] 模块插件 K8Cscan Moudle WmiScan.rar Wmi扫描Win系统密码插件<br />[+] 独立工具 K8Cscan for SameWeb.rar C段旁站扫描工具<br />[+] 独立工具 K8Cscan for SubDomain.rar 子域名扫描工具<br />[+] Demo源码 支持自定义插件、EXE、脚本等（附C#/VC/Delphi/Python源码)<br />[+] 插件源码 K8Cscan Moudle PortScan.cs&nbsp; 端口扫描插件源码(自行编译)<br />[+] 插件源码 c# netscan 存活主机 &amp; Web信息插件源码(以上已发布成品)</span></p>
 <p><span style="font-size: 16px;"><strong>3.7用法:</strong></span><br />检测存活(目标内外网均可使用)<br />cscan (直接运行)<br />cscan 192.168.1.108 (单个IP)<br />cscan 192.168.1.108/24 (C段)<br />cscan 192.168.1.108/16 (B段)<br />cscan 192.168.1.108/8&nbsp; (A段)<br />cscan 192.168.1.0 192.168.5.0 (C段范围)<br />不存测存活(代理或禁ICMP时用)<br />cscan nocheck (直接运行)<br />cscan nocheck 192.168.1.108 (单个IP)<br />cscan nocheck 192.168.1.108/24 (C段)<br />cscan nocheck 192.168.1.108/16 (B段)<br />cscan nocheck 192.168.1.108/8&nbsp; (A段)<br />cscan nocheck 192.168.1.0 192.168.5.0 (C段范围)<br /><br />支持URL或IP端口参数<br />cscan.exe http://192.168.1.106:7001<br />cscan.exe 192.168.1.106:7001</p>
-<p><br />PS:直接运行默认扫描当前机器C段，批量C段(ip24.txt)，批量B段(ip16.txt),批量A段(不支持)<br />&nbsp;&nbsp; 批量IP(ip.txt),批量URL使用url.txt,调用优先级ip24.txt&gt;&gt;ip16.txt&gt;&gt;ip.txt&gt;&gt;url.txt<br />&nbsp;&nbsp; 程序文件名中的20、30、35、40、45为.NET版本，根据运行环境选择,主程序与DLL均需对应<br /><br /><strong><span style="font-size: 16px;">插件教程:</span></strong></p>
+<p><br />PS:直接运行默认扫描当前机器C段，批量C段(ip24.txt)，批量B段(ip16.txt),批量A段(不支持)<br />&nbsp;&nbsp; 批量IP(ip.txt),批量URL使用url.txt,调用优先级ip24.txt&gt;&gt;ip16.txt&gt;&gt;ip.txt&gt;&gt;url.txt<br />&nbsp;&nbsp; 程序文件名中的20、30、35、40、45为.NET版本，根据运行环境选择,主程序与DLL均需对应<br /><br /><strong><span style="font-size: 16px;">演示教程:</span></strong></p>
+<p><strong><span style="font-size: 16px;">教程12: Python 调用(Cscan for Python)<br /></span></strong></p>
+<p><a href="https://www.cnblogs.com/k8gege/p/10852832.html" target="_blank">https://www.cnblogs.com/k8gege/p/10852832.html</a></p>
+<p><img src="https://img2018.cnblogs.com/blog/1463611/201905/1463611-20190512183655716-889874669.png" alt="" /></p>
+<p>&nbsp;</p>
 <p><strong><span style="font-size: 16px;">教程11: GUI版方便本地使用(被调用exe或dll请使用.net 2.0版本)</span></strong></p>
 <p><a href="https://github.com/k8gege/K8CScan/blob/master/CscanGui.exe" target="_blank">https://github.com/k8gege/K8CScan/blob/master/CscanGui.exe</a></p>
 <p><strong><span style="font-size: 16px;"><img src="https://img2018.cnblogs.com/blog/1463611/201905/1463611-20190512173558994-1162950396.png" alt="" /></span></strong></p>
@@ -88,11 +92,17 @@
 
 
 
+
+
+
 </div>
 <p><img src="https://img2018.cnblogs.com/blog/1463611/201904/1463611-20190403183709383-1787739211.png" alt="" /></p>
 <p><strong><span style="font-size: 16px;">插件4: FTP密码爆破</span></strong></p>
 <div><strong><span style="font-size: 16px;"><a href="https://www.cnblogs.com/k8gege/p/10650630.html%20" target="_blank">https://www.cnblogs.com/k8gege/p/10650630.html </a></span></strong></div>
 <div><img src="https://img2018.cnblogs.com/blog/1463611/201904/1463611-20190403183627098-963540691.png" alt="" /></div>
+
+
+
 
 
 
