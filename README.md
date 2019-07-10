@@ -1,14 +1,14 @@
-# [原创]K8Cscan 3.8大型内网渗透自定义扫描器(支持批量C段/B段/A段/IP列表/URL列表/跨网段扫描)
 <p><span style="font-size: 15px;"><strong><span style="font-size: 18px;">前言:</span><br /></strong>无论内网还是外网渗透信息收集都是非常关键，信息收集越多越准确渗透的成功率就越高<br />但成功率还受到漏洞影响，漏洞受时效性影响，对于大型内网扫描速度直接影响着成功率<br />漏洞时效性1-2天，扫描内网或外网需1周时间，是否会因此错过很多或许可成功的漏洞？<br />对于那些拥有几百上千域名的大站来说，你发现越快成功率就越高，慢管理员就打补丁了<br />因此我们需要一个支持批量C段/B段甚至A段的扫描器，添加自定义模块快速检测新出漏洞<br /></span></p>
 <p><span style="font-size: 18px;"><strong>Cscan</strong></span><span style="font-size: 15px;"><span class="flex-auto mb-2"><span class="text-gray-dark mr-2"><span style="font-size: 18px;"><strong>简介:</strong></span><br /><span style="font-size: 14px;">何为自定义扫描器？其实也是插件化，但Cscan不需要编程同样可实现自定义功能，这比单纯插件化更容易实现插件功能</span><br /><span style="font-size: 14px;">Cscan旨在为用户提供一个高度灵活、简单易用、多线程、多网段的插件化扫描框架，减少大量重复性工作提高工作效率</span><br /><span style="font-size: 14px;">3.3及以上版本分为检测存活和不检测存活主机模式 程序采用多线程批量扫描大型内网IP段C段存活主机(支持上万个C段)</span><br /><span style="font-size: 14px;">插件含C段旁注扫描、子域名扫描、Ftp密码爆破、Mysql密码爆、系统密码爆破、存活主机扫描、Web信息探测、端口扫描</span><br /><span style="font-size: 14px;">支持调用任意外部程序或脚本，支持自定义模块，当然也可用于外网扫描（如子域名、C段旁注、FTP破、MYSQL爆破等）</span><br /><br /><span style="font-size: 18px;"><strong>使用场景：</strong></span><br /><span style="font-size: 14px;">企业批量漏洞检测，比方说新出了一个漏洞POC，只需配置Cscan.ini即可批量调用POC测试企业内部或外部站点漏洞检测</span><br /><span style="font-size: 14px;">红队可快速找到对应漏洞进行利用，蓝队也可快速找到对应漏洞并修复。无需每次暴出漏洞都去写个批量检测或利用程序</span><br /><br /></span></span></span></p>
 <p><span style="font-size: 18px;"><strong>主程序功能：</strong><br /><span style="font-size: 15px;"><span style="font-size: 15px;"><span style="font-size: 15px;"><span style="font-size: 15px;">1.支持指定IP扫描<br />2.支持指定C段扫描(ip/24)<br />3.支持指定B段扫描(ip/16)<br />4.支持指定A段扫描(ip/8)<br />5.支持指定URL扫描<br />6.支持批量IP扫描(ip.txt)<br />7.支持批量C段扫描(ip24.txt)<br />8.支持批量B段扫描(ip16.txt)<br />9.支持批量URL扫描(url.txt)<br />10.支持指定范围C段扫描<br />11.支持调用自定义程序(系统命令或第三方程序)<br />12.支持自定义模块(功能基于模块源码修改即可)</span></span></span></span></span></p>
 <p><span style="font-size: 18px;"><strong>程序&amp;插件:</strong></span><br /><span style="font-size: 15px;">[+] 主程序&nbsp;&nbsp; K8Cscan 3.8.rar 大型内网渗透扫描器<br />[+] 模块插件 K8Cscan Moudle WeblogicScan &amp; Exploit.rar Weblogic漏洞扫描&amp;GetShell插件<br />[+] 模块插件 K8Cscan Moudle OSScan.rar 系统版本探测插件<br />[+] 模块插件 K8Cscan Moudle FtpScan.rar Ftp密码扫描插件<br />[+] 模块插件 K8Cscan Moudle MysqlScan.rar Mysql密码扫描插件<br />[+] 模块插件 K8Cscan Moudle OnlinePC.rar 存活主机扫描插件<br />[+] 模块插件 K8Cscan Moudle WebBanner.rar WebBanner标题扫描插件<br />[+] 模块插件 K8Cscan Moudle WmiScan.rar Wmi扫描Win系统密码插件<br />[+] 独立工具 K8Cscan for SameWeb.rar C段旁站扫描工具<br />[+] 独立工具 K8Cscan for SubDomain.rar 子域名扫描工具<br />[+] Demo源码 支持自定义插件、EXE、脚本等（附C#/VC/Delphi/Python源码)<br />[+] 插件源码 K8Cscan Moudle PortScan.cs&nbsp; 端口扫描插件源码(自行编译)<br />[+] 插件源码 c# netscan 存活主机 &amp; Web信息插件源码(以上已发布成品)</span></p>
 <p><span style="font-size: 16px;"><strong>3.7用法:</strong></span><br />检测存活(目标内外网均可使用)<br />cscan (直接运行)<br />cscan 192.168.1.108 (单个IP)<br />cscan 192.168.1.108/24 (C段)<br />cscan 192.168.1.108/16 (B段)<br />cscan 192.168.1.108/8&nbsp; (A段)<br />cscan 192.168.1.0 192.168.5.0 (C段范围)<br />不存测存活(代理或禁ICMP时用)<br />cscan nocheck (直接运行)<br />cscan nocheck 192.168.1.108 (单个IP)<br />cscan nocheck 192.168.1.108/24 (C段)<br />cscan nocheck 192.168.1.108/16 (B段)<br />cscan nocheck 192.168.1.108/8&nbsp; (A段)<br />cscan nocheck 192.168.1.0 192.168.5.0 (C段范围)<br /><br />支持URL或IP端口参数<br />cscan.exe http://192.168.1.106:7001<br />cscan.exe 192.168.1.106:7001</p>
-<p><br />PS:直接运行默认扫描当前机器C段，批量C段(ip24.txt)，批量B段(ip16.txt),批量A段(不支持)<br />&nbsp;&nbsp; 批量IP(ip.txt),批量URL使用url.txt,调用优先级ip24.txt&gt;&gt;ip16.txt&gt;&gt;ip.txt&gt;&gt;url.txt<br />&nbsp;&nbsp; 程序文件名中的20、30、35、40、45为.NET版本，根据运行环境选择,主程序与DLL均需对应<br /><br /><strong><span style="font-size: 16px;">演示教程:</span></strong></p>
-<p><strong><span style="font-size: 16px;">教程12: Python 调用(Cscan for Python)<br /></span></strong></p>
+<p><br />PS:直接运行默认扫描当前机器C段，批量C段(ip24.txt)，批量B段(ip16.txt),批量A段(不支持)<br />&nbsp;&nbsp; 批量IP(ip.txt),批量URL使用url.txt,调用优先级ip24.txt&gt;&gt;ip16.txt&gt;&gt;ip.txt&gt;&gt;url.txt，IP.txt不仅限于IP<br />&nbsp;&nbsp; 程序文件名中的20、30、35、40、45为.NET版本，根据运行环境选择,主程序与DLL均需对应<br /><br /><strong><span style="font-size: 16px;">演示教程:</span></strong></p>
+<p><strong><span style="font-size: 16px;">教程13:K8Cscan调用外部程序例子(Win/Linux批量上控)</span></strong></p>
+<p><a href="https://www.cnblogs.com/k8gege/p/11161242.html" target="_blank">https://www.cnblogs.com/k8gege/p/11161242.html</a></p>
+<p><strong><span style="font-size: 16px;">教程12: Python版主要用于Linux,当然也可用于Win<br /></span></strong></p>
 <p><a href="https://www.cnblogs.com/k8gege/p/10852832.html" target="_blank">https://www.cnblogs.com/k8gege/p/10852832.html</a></p>
-<p><img src="https://img2018.cnblogs.com/blog/1463611/201905/1463611-20190512183655716-889874669.png" alt="" /></p>
-<p>&nbsp;</p>
+<p><img src="https://img2018.cnblogs.com/blog/1463611/201907/1463611-20190710223325301-554278351.png" alt="" /></p>
 <p><strong><span style="font-size: 16px;">教程11: GUI版方便本地使用(被调用exe或dll请使用.net 2.0版本)</span></strong></p>
 <p><a href="https://github.com/k8gege/K8CScan/blob/master/CscanGui.exe" target="_blank">https://github.com/k8gege/K8CScan/blob/master/CscanGui.exe</a></p>
 <p><strong><span style="font-size: 16px;"><img src="https://img2018.cnblogs.com/blog/1463611/201905/1463611-20190512173558994-1162950396.png" alt="" /></span></strong></p>
@@ -37,6 +37,10 @@
 <div>
 <div><span style="font-size: 16px;"><strong> 插件5:&nbsp; Mysql密码爆破</strong><br /><a href="https://www.cnblogs.com/k8gege/p/10650642.html%20" target="_blank"><span style="font-size: 16px;"><strong>https://www.cnblogs.com/k8gege/p/10650642.html
 </strong></span></a></span></div>
+
+
+
+
 
 
 
@@ -142,6 +146,10 @@
 
 
 
+
+
+
+
 </div>
 <p><span style="font-size: 16px;"><strong>插件3: C段旁站扫描插件、子域名扫描插件</strong></span></p>
 <p><span style="font-size: 16px;">&nbsp;<a href="https://www.cnblogs.com/k8gege/p/10626465.html" target="_blank">https://www.cnblogs.com/k8gege/p/10626465.html</a></span></p>
@@ -168,4 +176,4 @@
 <p><br /><span style="font-size: 16px;"><strong>3.0 DLL调用（支持C# DLL \ VC DLL \Delphi DLL）</strong></span><br /><br />Demo<br />C# DLL 名称必须为netscan.dll &nbsp;&nbsp; &nbsp; （源码例子为获取IP对应机器名，其它功能自己写）<br />VC DLL 名称必须为vcscan.dll &nbsp;&nbsp;&nbsp; &nbsp; （源码例子为打印在线主机IP，其它功能自己写）<br />Delphi DLL 名称必须为descan.dll&nbsp; （源码例子为打印在线主机IP，其它功能自己写）<br /><br />EXE (非scan.exe或多参数需配置cscan.ini)<br />scan.py&nbsp;&nbsp; 使用pyinstaller打包成exe（源码例子为打印在线主机IP，其它功能自己写）<br />scan.cs&nbsp; （源码例子为打印在线主机IP，其它功能自己写）<br />scan.cpp （源码例子为打印在线主机IP，其它功能自己写）<br /><br /><span style="font-size: 16px;">调用优先级</span><br /><span style="font-size: 16px;">为 netscan.dll &gt;&gt; vcscan.dll &gt;&gt; descan.dll &gt;&gt; Cscan.ini &gt;&gt; scan.exe 同目录下同时含以下多个文件时，仅会调用一个。</span><br /><span style="font-size: 16px;">Cscan.ini 支持exe自定义参数，其它均只支持IP。</span><br /><br /><span style="font-size: 16px;"><strong>注意：</strong></span></p>
 <p><span style="font-size: 16px;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>调用EXE可能会在运行机器上产生30个exe进程,所以建议将功能写成DLL比较好。</span><br /><span style="font-size: 16px;">&nbsp;&nbsp; &nbsp;&nbsp; 不懂代码的或实在无法实现功能的可使用exe或配置cscan.ini文件（如批量ping，WMI批量种马等）</span><br /><br />&nbsp;&nbsp; &nbsp; &nbsp;<br /><span style="font-size: 16px;"><strong>其它：</strong></span></p>
 <p><span style="font-size: 16px;"><strong>&nbsp;&nbsp;&nbsp;&nbsp; </strong></span>由于python编译后的DLL还是需要python相关依赖实在太大，就不提供DLL例子了,不会以上3种语言就exe吧。<br />&nbsp;&nbsp; &nbsp;&nbsp; Python、Perl或其它类似脚本可配置Cscan.ini当成EXE来调用,如python.exe scan.py 192.168.1.1<br />&nbsp;&nbsp; &nbsp;&nbsp; 但你并不能保证目标一定安装有对应python依赖包，所以还是得编译成EXE比较好，<br />&nbsp;&nbsp; &nbsp;&nbsp; 如果不编译也会产生30个Python.exe进程，因为py脚本是靠python.exe来执行的。<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bat也会产生一堆被执行系统命令的EXE进程，最佳方案把相关命令写成一个EXE。<br />&nbsp;&nbsp; &nbsp;&nbsp; 最主要是多线程不好同时监视BAT调用的命令是否执行完成，无法准确获取回显。<br />&nbsp;&nbsp; &nbsp; &nbsp;<br />&nbsp;&nbsp; &nbsp; &nbsp;<br />build 20190312 by K8哥哥<br /><br />=======================================================================<br /><br /></p>
-<p><span style="font-size: 16px;"><strong>下载:</strong></span><br />主程序：<a href="https://github.com/k8gege/K8tools/blob/master/K8Cscan%203.7.rar" target="_blank">https://github.com/k8gege/K8tools/blob/master/K8Cscan%203.7.rar</a></p>
+<p><span style="font-size: 16px;"><strong>下载:</strong></span><br />主程序：<a href="https://github.com/k8gege/K8tools/blob/master/K8Cscan%203.8.rar" target="_blank">https://github.com/k8gege/K8tools/blob/master/K8Cscan%203.8.rar</a></p>
