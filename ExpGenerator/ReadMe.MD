@@ -1,4 +1,4 @@
-# Web漏洞插件生成器使用教程<br>
+# Web漏洞插件生成器<br>
 ### 简介
 Cscan Web Exp生成器包含4种提交方法Get/Post/Put/Delete,支持15个Http协议参数。<br>
 用户无需编程能力，填写HTTP参数即可生成Web漏洞POC，快速扩展Cscan扫描能力。
