@@ -4,7 +4,6 @@ K8Cscan一款专用于大型内网渗透的高并发插件化扫描神器，包�
 
 
 <br>
-PS：小中型内网明显也是支持的，大家不要慌而且速度非常快，扫你的办公室网络就只是嗖的一下<br>
-通过ICMP、DNS、SMB、HTTP、netbios、Port、Banner、Web、Sql、WMI、Wnet等方式探测主机<br>
+PS：如果觉得好用给个Start，您的关注是我更新的动力，默认佛系更新（我打游戏它不得哦），有好的建议或Bug反馈请提交Issue,工具更强大<br>
 <br>
 使用说明: https://github.com/k8gege/K8CScan/wiki<br>
