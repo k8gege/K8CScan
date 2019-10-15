@@ -5,7 +5,7 @@ K8Cscan一款专用于大型内网渗透的高并发插件化扫描神器，包�
 <br>
 使用说明: https://github.com/k8gege/K8CScan/wiki<br>
 <br>
-姿势非常多包括但不限于教程<br>
+包括但不限于以下教程<br>
 C#插件DLL源码 批量端口扫描<br>
 C#插件EXE源码 批量Base64<br>
 Cscan.ini例子 批量SSH上控<br>
