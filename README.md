@@ -4,3 +4,34 @@ K8Cscan一款专用于大型内网渗透的高并发插件化扫描神器，包�
 
 <br>
 使用说明: https://github.com/k8gege/K8CScan/wiki<br>
+<br>
+C#插件DLL源码 批量端口扫描<br>
+C#插件EXE源码 批量Base64<br>
+Cscan.ini例子 批量SSH上控<br>
+Cscan.ini例子 批量Win上控<br>
+PowerShell插件 批量Base64<br>
+信息收集 C段域名URL扫描<br>
+信息收集 C段旁站扫描<br>
+信息收集 Web指纹识别<br>
+信息收集 Web资产扫描<br>
+信息收集 存活主机扫描<br>
+信息收集 思科设备扫描<br>
+信息收集 操作系统探测<br>
+信息收集 枚举MSSQL主机<br>
+信息收集 枚举网络共享资源<br>
+加密解密 批量Base64密码<br>
+加密解密 批量Hex密码<br>
+实用功能 批量域名解析<br>
+密码爆破 FTP文件服务器<br>
+密码爆破 IpcScan(Windows)<br>
+密码爆破 MSSQL数据库<br>
+密码爆破 MySQL数据库<br>
+密码爆破 Oracle数据库<br>
+密码爆破 SmbScan(Windows)<br>
+密码爆破 SSHscan(Linux)<br>
+密码爆破 WmiScan(Windows)<br>
+漏洞利用 ActiveMQ GetShell<br>
+漏洞扫描 CVE 2019 0708<br>
+漏洞扫描 CVE 2019 2725<br>
+漏洞扫描 MS17 010<br>
+漏洞扫描 PhpStudyDoor<br>
