@@ -36,3 +36,5 @@ PowerShell插件 批量Base64<br>
 漏洞扫描 CVE 2019 2725<br>
 漏洞扫描 MS17 010<br>
 漏洞扫描 PhpStudyDoor<br>
+
+<img src=https://github.com/k8gege/K8CScan/blob/master/Images/CobaltStrike.gif></img>
