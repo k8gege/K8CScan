@@ -4,6 +4,13 @@ K8Cscan一款专用于大型内网渗透的高并发插件化扫描神器，包�
 
 <br>
 使用说明: https://github.com/k8gege/K8CScan/wiki<br>
+
+<br>
+工具演示:<br>
+<img src=https://github.com/k8gege/K8CScan/blob/master/Images/K8Cscan.gif></img>
+Cobalt Strike<br>
+<img src=https://github.com/k8gege/K8CScan/blob/master/Images/CobaltStrike.gif></img>
+
 <br>
 包括但不限于以下教程<br>
 C#插件DLL源码 批量端口扫描<br>
@@ -36,8 +43,3 @@ PowerShell插件 批量Base64<br>
 漏洞扫描 CVE 2019 2725<br>
 漏洞扫描 MS17 010<br>
 漏洞扫描 PhpStudyDoor<br>
-<br>
-工具演示:<br>
-<img src=https://github.com/k8gege/K8CScan/blob/master/Images/K8Cscan.gif></img>
-Cobalt Strike<br>
-<img src=https://github.com/k8gege/K8CScan/blob/master/Images/CobaltStrike.gif></img>
