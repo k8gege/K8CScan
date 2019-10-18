@@ -13,6 +13,11 @@ Cobalt Strike<br>
 
 <br>
 包括但不限于以下教程<br>
+<br>
+4.Linux版Cscan使用<br>
+5.Cobalt Strike联动<br>
+6.DiyMoudle自定义模块<br>
+7.Exploit Generator插件生成器<br>
 C#插件DLL源码 批量端口扫描<br>
 C#插件EXE源码 批量Base64<br>
 Cscan.ini例子 批量SSH上控<br>
@@ -21,7 +26,9 @@ PowerShell插件 批量Base64<br>
 信息收集 C段域名URL扫描<br>
 信息收集 C段旁站扫描<br>
 信息收集 Web指纹识别<br>
+信息收集 Web目录扫描<br>
 信息收集 Web资产扫描<br>
+信息收集 子域名爆破<br>
 信息收集 存活主机扫描<br>
 信息收集 思科设备扫描<br>
 信息收集 操作系统探测<br>
@@ -38,8 +45,10 @@ PowerShell插件 批量Base64<br>
 密码爆破 SmbScan(Windows)<br>
 密码爆破 SSHscan(Linux)<br>
 密码爆破 WmiScan(Windows)<br>
-漏洞利用 ActiveMQ GetShell<br>
-漏洞扫描 CVE 2019 0708<br>
-漏洞扫描 CVE 2019 2725<br>
-漏洞扫描 MS17 010<br>
-漏洞扫描 PhpStudyDoor<br>
+漏洞利用 CVE 2016 3088 ActiveMQ GetShell Exploit<br>
+漏洞利用 CVE 2019 0604 SharePoint GetShell Exploit<br>
+漏洞利用 CVE 2019 9621 Zimbra GetShell Exploit<br>
+漏洞扫描 CVE 2017 0148 MS17 010 SMB永恒之蓝<br>
+漏洞扫描 CVE 2019 0708 Windows Rdp远程代码执行<br>
+漏洞扫描 CVE 2019 2725 Weblogic GetShell Exploit<br>
+漏洞扫描 PhpStudy后门<br>
