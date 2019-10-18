@@ -37,7 +37,7 @@ PowerShell插件 批量Base64<br>
 漏洞扫描 MS17 010<br>
 漏洞扫描 PhpStudyDoor<br>
 <br>
-演示:<br>
+工具演示:<br>
 <img src=https://github.com/k8gege/K8CScan/blob/master/Images/K8Cscan.gif></img>
-Cobalt Strike联动<br>
+Cobalt Strike<br>
 <img src=https://github.com/k8gege/K8CScan/blob/master/Images/CobaltStrike.gif></img>
