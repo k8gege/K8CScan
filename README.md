@@ -4,7 +4,7 @@ K8Cscan一款专用于大型内网渗透的高并发插件化扫描神器，包�
 
 <br>
 使用说明: https://github.com/k8gege/K8CScan/wiki<br>
-CS联动https://github.com/k8gege/K8CscanAggressor<br>
+CS联动: https://github.com/k8gege/K8CscanAggressor<br>
 <br>
 工具演示:<br>
 <img src=https://github.com/k8gege/K8CScan/blob/master/Images/K8Cscan.gif></img>
