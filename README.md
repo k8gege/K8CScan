@@ -5,6 +5,9 @@ K8Cscan一款专用于大型内网渗透的高并发插件化扫描神器，包�
 
 <h3>使用说明</h3>
 https://github.com/k8gege/K8CScan/wiki<br>
+Example: Cscan 192.168.1.8 OnlinePC<br>
+Example: Cscan 192.168.1.8/24 OnlinePC<br>
+
 
 <br>
 <h3>工具演示</h3>
