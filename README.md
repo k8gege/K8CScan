@@ -12,43 +12,69 @@ Cobalt Strike<br>
 <img src=https://github.com/k8gege/K8CScan/blob/master/Images/CobaltStrike.gif></img>
 
 <br>
-包括但不限于以下教程<br>
-4.Linux版Cscan使用<br>
-5.Cobalt Strike联动<br>
-6.DiyMoudle自定义模块<br>
-7.Exploit Generator插件生成器<br>
-C#插件DLL源码 批量端口扫描<br>
-C#插件EXE源码 批量Base64<br>
-Cscan.ini例子 批量SSH上控<br>
-Cscan.ini例子 批量Win上控<br>
-PowerShell插件 批量Base64<br>
-信息收集 C段域名URL扫描<br>
-信息收集 C段旁站扫描<br>
-信息收集 Web指纹识别<br>
-信息收集 Web目录扫描<br>
-信息收集 Web资产扫描<br>
-信息收集 子域名爆破<br>
-信息收集 存活主机扫描<br>
-信息收集 思科设备扫描<br>
-信息收集 操作系统探测<br>
-信息收集 枚举MSSQL主机<br>
-信息收集 枚举网络共享资源<br>
-加密解密 批量Base64密码<br>
-加密解密 批量Hex密码<br>
-实用功能 批量域名解析<br>
-密码爆破 FTP文件服务器<br>
-密码爆破 IpcScan(Windows)<br>
-密码爆破 MSSQL数据库<br>
-密码爆破 MySQL数据库<br>
-密码爆破 Oracle数据库<br>
-密码爆破 SmbScan(Windows)<br>
-密码爆破 SSHscan(Linux)<br>
-密码爆破 WmiScan(Windows)<br>
-漏洞利用 CVE 2016 3088 ActiveMQ GetShell Exploit<br>
-漏洞利用 CVE 2019 0604 SharePoint GetShell Exploit<br>
-漏洞利用 CVE 2019 9621 Zimbra GetShell Exploit<br>
-漏洞扫描 CVE 2017 0148 MS17 010 SMB永恒之蓝<br>
-漏洞扫描 CVE 2019 0708 Windows Rdp远程代码执行<br>
-漏洞扫描 CVE 2019 2725 Weblogic GetShell Exploit<br>
-漏洞扫描 PhpStudy后门<br>
+@程序功能<br>
+===============================================================================================<br>
+支持指定IP扫描<br>
+支持指定C段扫描(ip/24)<br>
+支持指定B段扫描(ip/16)<br>
+支持指定A段扫描(ip/8)<br>
+支持指定URL扫描<br>
+支持批量IP扫描(ip.txt)<br>
+支持批量C段扫描(ip24.txt)<br>
+支持批量B段扫描(ip16.txt)<br>
+支持批量URL扫描(url.txt)<br>
+支持批量域名扫描(domain.txt)<br>
+支持批量主机扫描(host.txt)<br>
+支持批量字符串列表(str.txt)<br>
+支持指定范围C段扫描<br>
+支持参数加载自定义DLL（仅限C#）<br>
+支持参数加载自定义EXE（仅限C#）<br>
+支持自定义程序(系统命令或第三方程序即任意语言开发的程序或脚本)<br>
+支持自定义模块(支持多种语言编写的DLL/.NET程序集/PowerShell脚本)<br>
+支持Cobalt Strike(beacon命令行下扫描目标内网或跳板扫描外网目标)<br>
+<br>
+<br>
+@模块功能<br>
+===============================================================================================<br>
+模块插件 MS170101 		SMB漏洞扫描[5.0内置]<br>
+模块插件 UrlScan 		URL域名扫描[5.0内置]<br>
+模块插件 SameWeb 		同服域名扫描[5.0内置]<br>
+模块插件 CiscoScan 		Cisco思科设备扫描[5.0内置]<br>
+模块插件 WebScan 		Web信息扫描[5.0内置]<br>
+模块插件 WebScan2		Web信息扫描含CMS[5.0内置]<br>
+模块插件 WeblogicPoc	Weblogic漏洞检测[5.0内置]<br>
+模块插件 WeblogicExp	Weblogic漏洞利用[5.0内置]<br>
+模块插件 OSScan 		系统版本探测[5.0内置]<br>
+模块插件 FtpScan 		Ftp密码扫描[5.0内置]<br>
+模块插件 MysqlScan 		Mysql密码扫描[5.0内置]<br>
+模块插件 OnlinePC 		存活主机扫描[5.0内置]<br>
+模块插件 OnlineIP 		仅存活主机IP[5.0内置]<br>
+模块插件 WebBanner 		内网Web信息扫描[5.0内置]<br>
+模块插件 WmiScan 		Wmi爆破Windowns密码[5.0内置]<br>
+模块插件 SameWeb 		C段旁站扫描[5.0内置]<br>
+模块插件 PortScan.cs 	端口扫描插件源码<br>
+模块插件 HostIP 		域名解析/主机名转IP[5.0内置]<br>
+模块插件 C# netscan 	存活主机 & Web信息插件成品&源码<br>
+模块插件 Base64Enc(EXE) Base64加密(c#程序)<br>
+模块插件 Base64Dec(EXE) Base64解密(c#程序)<br>
+模块插件 HexDec(PSH)	Hex解密(PowerShell脚本)<br>
+模块插件 Base64Dec(PSH)	Base64解密(PowerShell脚本)<br>
+模块插件 MssqlScan 		Mssql数据库密码爆破[5.0内置]<br>
+模块插件 OracleScan 	Oracle数据库密码爆破[5.0内置]<br>
+模块插件 SSHscan 		SSH密码爆破(Linux)[5.0内置]<br>
+模块插件 EnumMssql 		枚举Mssql数据库主机[5.0内置]<br>
+模块插件 EnumShare 		枚举网络共享资源[5.0内置]<br>
+模块插件 IpcScan 		Ipc爆破Windows密码[5.0内置]<br>
+模块插件 SmbScan 		SMB爆破Windows密码[5.0内置]<br>
+模块插件 OracleScan 	Oracle数据库密码爆破[5.0内置]<br>
+模块插件 WhatCMS 		75种Web指纹识别[5.0内置]<br>
+模块插件 EnHex/DeHex 	批量Hex密码加密解密[5.0内置]<br>
+模块插件 EnBase64		批量Base64密码加密[5.0内置]<br>
+模块插件 DeBase64 		批量Base64密码解密[5.0内置]<br>
+模块插件 PhpStudyPoc 	PhpStudy后门检测[5.0内置]<br>
+模块插件 SubDomain 		子域名爆破[5.3内置]<br>
+模块插件 WebDir 		后台目录扫描[5.3内置]<br>
+模块插件 DomainIP 		批量域名解析[5.3内置]	<br>
+模块插件 ActiveMQPoc 	ActiveMQ漏洞检测[5.4内置]	<br>
+
 
