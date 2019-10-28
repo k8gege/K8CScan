@@ -37,20 +37,20 @@ Example: Cscan 192.168.1.8/24 OnlinePC<br>
 支持Cobalt Strike(beacon命令行下扫描目标内网或跳板扫描外网目标)<br>
 <br>
 <h3>模块功能</h3>
-模块插件 MS170101 		SMB漏洞扫描[5.0内置]<br>
-模块插件 UrlScan 		URL域名扫描[5.0内置]<br>
-模块插件 SameWeb 		同服域名扫描[5.0内置]<br>
-模块插件 CiscoScan 		Cisco思科设备扫描[5.0内置]<br>
-模块插件 WebScan 		Web信息扫描[5.0内置]<br>
-模块插件 WebScan2		Web信息扫描含CMS[5.0内置]<br>
+模块插件 MS170101 	SMB漏洞扫描[5.0内置]<br>
+模块插件 UrlScan 	URL域名扫描[5.0内置]<br>
+模块插件 SameWeb 	同服域名扫描[5.0内置]<br>
+模块插件 CiscoScan 	Cisco思科设备扫描[5.0内置]<br>
+模块插件 WebScan 	Web信息扫描[5.0内置]<br>
+模块插件 WebScan2	Web信息扫描含CMS[5.0内置]<br>
 模块插件 WeblogicPoc	Weblogic漏洞检测[5.0内置]<br>
 模块插件 WeblogicExp	Weblogic漏洞利用[5.0内置]<br>
 模块插件 OSScan 		系统版本探测[5.0内置]<br>
-模块插件 FtpScan 		Ftp密码扫描[5.0内置]<br>
-模块插件 MysqlScan 		Mysql密码扫描[5.0内置]<br>
-模块插件 OnlinePC 		存活主机扫描[5.0内置]<br>
-模块插件 OnlineIP 		仅存活主机IP[5.0内置]<br>
-模块插件 WebBanner 		内网Web信息扫描[5.0内置]<br>
+模块插件 FtpScan 	Ftp密码扫描[5.0内置]<br>
+模块插件 MysqlScan 	Mysql密码扫描[5.0内置]<br>
+模块插件 OnlinePC 	存活主机扫描[5.0内置]<br>
+模块插件 OnlineIP 	仅存活主机IP[5.0内置]<br>
+模块插件 WebBanner 	内网Web信息扫描[5.0内置]<br>
 模块插件 WmiScan 		Wmi爆破Windowns密码[5.0内置]<br>
 模块插件 SameWeb 		C段旁站扫描[5.0内置]<br>
 模块插件 PortScan.cs 	端口扫描插件源码<br>
@@ -60,22 +60,22 @@ Example: Cscan 192.168.1.8/24 OnlinePC<br>
 模块插件 Base64Dec(EXE) Base64解密(c#程序)<br>
 模块插件 HexDec(PSH)	Hex解密(PowerShell脚本)<br>
 模块插件 Base64Dec(PSH)	Base64解密(PowerShell脚本)<br>
-模块插件 MssqlScan 		Mssql数据库密码爆破[5.0内置]<br>
+模块插件 MssqlScan 	Mssql数据库密码爆破[5.0内置]<br>
 模块插件 OracleScan 	Oracle数据库密码爆破[5.0内置]<br>
-模块插件 SSHscan 		SSH密码爆破(Linux)[5.0内置]<br>
-模块插件 EnumMssql 		枚举Mssql数据库主机[5.0内置]<br>
-模块插件 EnumShare 		枚举网络共享资源[5.0内置]<br>
-模块插件 IpcScan 		Ipc爆破Windows密码[5.0内置]<br>
-模块插件 SmbScan 		SMB爆破Windows密码[5.0内置]<br>
+模块插件 SSHscan 	SSH密码爆破(Linux)[5.0内置]<br>
+模块插件 EnumMssql 	枚举Mssql数据库主机[5.0内置]<br>
+模块插件 EnumShare 	枚举网络共享资源[5.0内置]<br>
+模块插件 IpcScan 	Ipc爆破Windows密码[5.0内置]<br>
+模块插件 SmbScan 	SMB爆破Windows密码[5.0内置]<br>
 模块插件 OracleScan 	Oracle数据库密码爆破[5.0内置]<br>
-模块插件 WhatCMS 		75种Web指纹识别[5.0内置]<br>
+模块插件 WhatCMS 	75种Web指纹识别[5.0内置]<br>
 模块插件 EnHex/DeHex 	批量Hex密码加密解密[5.0内置]<br>
-模块插件 EnBase64		批量Base64密码加密[5.0内置]<br>
-模块插件 DeBase64 		批量Base64密码解密[5.0内置]<br>
+模块插件 EnBase64	批量Base64密码加密[5.0内置]<br>
+模块插件 DeBase64 	批量Base64密码解密[5.0内置]<br>
 模块插件 PhpStudyPoc 	PhpStudy后门检测[5.0内置]<br>
-模块插件 SubDomain 		子域名爆破[5.3内置]<br>
+模块插件 SubDomain 	子域名爆破[5.3内置]<br>
 模块插件 WebDir 		后台目录扫描[5.3内置]<br>
-模块插件 DomainIP 		批量域名解析[5.3内置]	<br>
+模块插件 DomainIP 	批量域名解析[5.3内置]	<br>
 模块插件 ActiveMQPoc 	ActiveMQ漏洞检测[5.4内置]	<br>
-
+模块插件 TomcatPoc 	Tomcat漏洞检测[5.4内置]<br>
 
