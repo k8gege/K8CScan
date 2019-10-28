@@ -5,6 +5,7 @@ K8Cscan一款专用于大型内网渗透的高并发插件化扫描神器，包�
 
 <h3>使用说明</h3>
 Wiki:https://github.com/k8gege/K8CScan/wiki<br>
+Usage:https://github.com/k8gege/K8CScan/wiki/3.Usage<br>
 Video:https://github.com/k8gege/K8CScan/tree/master/Video<br>
 
 
