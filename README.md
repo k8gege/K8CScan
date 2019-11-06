@@ -1,5 +1,8 @@
-<h3>K8Cscan5.4 20191101</h3>
-
+### K8Cscan5.4 20191101
+[![GitHub issues](https://img.shields.io/github/issues/k8gege/K8CScan)](https://github.com/k8gege/K8CScan/issues) 
+[![Github Stars](https://img.shields.io/github/stars/k8gege/K8CScan)](https://github.com/k8gege/K8CScan) 
+[![GitHub forks](https://img.shields.io/github/forks/k8gege/K8CScan)](https://github.com/k8gege/K8CScan)
+[![GitHub license](https://img.shields.io/github/license/k8gege/K8CScan)](https://github.com/k8gege/K8CScan)
 <h3>程序简介</h3>   
 K8Cscan一款专用于大型内网渗透的高并发插件化扫描神器，包含信息收集、网络资产、漏洞扫描、密码爆破、漏洞利用，支持批量A段/B段/C段以及跨网段扫描。5.4版本内置28个功能模块,通过各种协议以及方法快速获取目标网络存活主机IP、计算机名、工作组、网络共享、网卡物理地址、操作系统版本、网站域名、Web中间件、路由器（Cisco）、数据库等网络资产信息,内置MS17-010(SMB漏洞)、Weblogic漏洞、ActiveMQ漏洞检测，内置6种密码认证爆破3种数据库(Mysql、Oracle、MSSQL)、FTP密码爆破(文件服务器)、SSH密码爆破(Linux主机)、IPC/WMI两种方式爆破Windows主机密码，Web指纹识别模块可识别75种应用、中间件、脚本类型。高度自定义插件支持.NET程序集、DLL(C#/Delphi/VC)、PowerShell等语言编写的插件以及无编程功底通过配置INI加载任意程序命令，可快速扩展扫描或利用能力。支持Cobalt Strike加载Cscan扫描目标内网或跳板扫描外网目标，可快速拓展内网进行横向移动。<br>
 
