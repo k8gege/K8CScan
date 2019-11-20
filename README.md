@@ -1,7 +1,5 @@
 ### K8Cscan5.4 20191101
 # 最新版Ladon https://github.com/k8gege/Ladon
-<font face="微软雅黑" size = 7 color = red > **MarkDown** 
-
 
 [![GitHub issues](https://img.shields.io/github/issues/k8gege/K8CScan)](https://github.com/k8gege/K8CScan/issues) 
 [![Github Stars](https://img.shields.io/github/stars/k8gege/K8CScan)](https://github.com/k8gege/K8CScan/stargazers) 
