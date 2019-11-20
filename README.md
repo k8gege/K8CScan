@@ -1,6 +1,6 @@
 ### K8Cscan5.4 20191101
-# <font color="red">最新版Ladon</font> https://github.com/k8gege/Ladon
-<font color="red">最新版Ladon</font>
+# <font color=red>最新版Ladon</font> https://github.com/k8gege/Ladon
+<font color=red>我是红色</font>
 [![GitHub issues](https://img.shields.io/github/issues/k8gege/K8CScan)](https://github.com/k8gege/K8CScan/issues) 
 [![Github Stars](https://img.shields.io/github/stars/k8gege/K8CScan)](https://github.com/k8gege/K8CScan/stargazers) 
 [![GitHub forks](https://img.shields.io/github/forks/k8gege/K8CScan)](https://github.com/k8gege/K8CScan/network/members)
